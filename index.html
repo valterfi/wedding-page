@@ -66,6 +66,9 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<script src="https://js.stripe.com/v3/" data-locale="fr"></script>
+	<script src="js/script.js" defer></script>
+
 	</head>
 	<body>
 	<header role="banner" id="qbootstrap-header">
@@ -103,10 +106,10 @@
 					<div class="container">
 						<div class="col-md-10 col-md-offset-1">
 							<div class="animate-box svg-sm colored">
-								<img src="images/flaticon/svg/004-nature.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+								<!-- <img src="images/flaticon/svg/004-nature.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com"> -->
 								<h1 class="holder"><span>The Wedding of</span></h1>
-								<h2>Louie Jie &amp; Marializa</h2>
-								<p>02.12.2017</p>
+								<h2>Esther&amp; Valterfi</h2>
+								<p>18.12.2021</p>
 							</div>
 						</div>
 					</div>
@@ -123,7 +126,7 @@
 						<img src="images/flaticon/svg/005-two.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
 						<h2>Are Getting Married</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam accusamus, sequi, minima repellendus explicabo magni aperiam, ducimus perferendis ad quidem suscipit omnis unde veritatis pariatur. Commodi, nisi. Iusto, accusantium a.</p>
-						<p><strong>on Dec 28, 2017 &mdash; Boracay, Philippines</strong></p>
+						<p><strong>on Dec 18, 2021 &mdash; Fortaleza/CE, Brazil</strong></p>
 					</div>
 				</div>
 			</div>
@@ -131,13 +134,13 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
 						<img src="images/groom.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-						<h3>Louie Jie L. Mahusay</h3>
+						<h3>Valterfi de Oliveira Costa</h3>
 						<span>Groom</span>
 					</div>
 					<div class="col-md-2 col-sm-2 col-xs-2 nopadding"><h2 class="amp-center"><img src="images/flaticon/svg/003-luxury.svg" class="svg img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></h2></div>
 					<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
 						<img src="images/bride.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-						<h3>Marializa R. Tabay</h3>
+						<h3>Esther de Sena Ferreira</h3>
 						<span>Bride</span>
 					</div>
 				</div>
@@ -605,64 +608,37 @@
 				<div class="col-md-8 col-md-offset-2">
 					<div class="col-md-12 text-center section-heading svg-sm colored">
 						<img src="images/flaticon/svg/005-two.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-						<h2>Our Blog</h2>
+						<h2>Gift to the Bride and Groom</h2>
 						<div class="row">
 						<div class="col-md-10 col-md-offset-1 subtext">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+							<h3>Thank you for your abudant generosity and kindness with your gift. We are beyond grateful. We love you and can't wait to celebrate the future with you!</h3>
+						</div>
+						<div class="sr-root">
+							<div class="sr-main">
+								<form id="payment-form" class="sr-payment-form">
+								<div class="sr-combo-inputs-row">
+									<div class="sr-input sr-card-element" id="card-element"></div>
+								</div>
+								<div class="sr-field-error" id="card-errors" role="alert"></div>
+								<button class="stripe-payment-button" id="submit">
+									<div class="spinner hidden" id="spinner"></div>
+									<span id="button-text">Pay</span><span id="order-amount"></span>
+								</button>
+								</form>
+								<div class="sr-result hidden">
+								<p>Payment completed<br /></p>
+								<pre>
+									<code></code>
+								</pre>
+								</div>
+							</div>
 						</div>
 					</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
-					<div class="qbootstrap-press-item animate-box">
-						<div class="qbootstrap-press-img" style="background-image: url(images/blog-1.jpg)">
-						</div>
-						<div class="qbootstrap-press-text">
-							<h3 class="h2 qbootstrap-press-title">The Wedding Party <span class="qbootstrap-border"></span></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-							<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="qbootstrap-press-item animate-box">
-						<div class="qbootstrap-press-img" style="background-image: url(images/blog-2.jpg)">
-						</div>
-						<div class="qbootstrap-press-text">
-							<h3 class="h2 qbootstrap-press-title">Wedding Party <span class="qbootstrap-border"></span></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-							<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-						</div>
-					</div>
-				</div>
 				
-				<div class="col-md-6">
-					<div class="qbootstrap-press-item animate-box">
-						<div class="qbootstrap-press-img" style="background-image: url(images/blog-3.jpg);">
-						</div>
-						<div class="qbootstrap-press-text">
-							<h3 class="h2 qbootstrap-press-title">Venue Wedding <span class="qbootstrap-border"></span></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-							<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="qbootstrap-press-item animate-box">
-						<div class="qbootstrap-press-img" style="background-image: url(images/blog-4.jpg);">
-						</div>
-						<div class="qbootstrap-press-text">
-							<h3 class="h2 qbootstrap-press-title">About The Couple <span class="qbootstrap-border"></span></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-							<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</div>
