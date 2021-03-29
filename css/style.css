@@ -342,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
   .video-hero {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -1685,6 +1685,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.wedding-home {
+  background-image: url("../images/cover_bg_3.jpg");
+}
+
+@media screen and (max-width: 768px) {
+  .wedding-home {
+    background-image: url("../images/cover_bg_3.jpg");
+    /* background-repeat: no-repeat; */
+    background-position: 400px;
+  }
+}
 
 /* Payment */
 
